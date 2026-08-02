@@ -1,0 +1,42 @@
+# 280 Earth
+
+> 280 Earth is a direct air capture (DAC) company that permanently removes carbon dioxide from the atmosphere. Launched in 2018 inside X, the Alphabet moonshot factory, and spun out as an independent company in 2022, it operates a pilot plant in The Dalles, Oregon that captures 500 tons of CO2 per year on a site sized for more than 20,000 tons per year at full build-out.
+
+280 Earth's proprietary sorbent moves through a gravity-fed, dual-chamber system that continuously cycles material between capturing and releasing CO2, rather than switching a single chamber on and off. The process runs on low-grade industrial waste heat or clean electricity and produces fresh water as a byproduct. The company is backed by Sergey Brin and Builders VC, closed a $50M Series B in 2024, and holds a $40M offtake agreement with the Frontier carbon removal buyer consortium to permanently remove 61,571 tons of CO2 between 2024 and 2030.
+
+## API surface
+
+280 Earth publishes **no public API, developer portal, SDK, MCP server, or machine-readable contract** as of 2026-08-02. Contract discovery probed the website host and eleven candidate subdomains (api., docs., developer., developers., app., portal., status., trust., security., data., mcp.) — none resolve — plus /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc, /graphql, /llms.txt and the /.well-known/ discovery surface. Every one missed. The company is a carbon-removal hardware operator, not an API provider.
+
+## Site
+
+- [Home](https://280.earth/): Direct air capture overview and mission
+- [Projects](https://280.earth/projects/): The Dalles, Oregon pilot plant — 500 tons CO2/year, waste-heat powered, fresh water byproduct
+- [Stories](https://280.earth/stories/): Press coverage of 280 Earth
+- [Careers](https://280.earth/careers/): Open roles
+- [Privacy Policy](https://280.earth/privacy-policy-2/)
+
+## Contact
+
+- General: info@280.earth
+- Press: press@280.earth
+- Partnerships: partner@280.earth
+
+## Elsewhere
+
+- [GitHub organization](https://github.com/280earth): 0 public repositories
+- [LinkedIn](https://www.linkedin.com/company/280-earth)
+- [X (Alphabet moonshot factory) project page](https://x.company/projects/280earth/)
+- [Frontier offtake announcement](https://frontierclimate.com/writing/280-earth)
+- [Forge Global secondary-market listing](https://forgeglobal.com/280-earth_stock/)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/280-earth/refs/heads/main/apis.yml): APIs.json 0.20 provider profile
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/280-earth/refs/heads/main/security/280-earth-domain-security.yml): probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture
+- [Well-known probe record](https://raw.githubusercontent.com/api-evangelist/280-earth/refs/heads/main/well-known/280-earth-well-known.yml): full contract-discovery evidence
+
+---
+generated: 2026-08-02
+method: generated
+source: apis.yml + probed https://280.earth/ (no provider-published /llms.txt; https://280.earth/llms.txt returned 404)

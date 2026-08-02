@@ -1,0 +1,104 @@
+generated: '2026-08-02'
+method: probed
+source: https://280.earth/
+host: https://280.earth
+summary: >-
+  No /.well-known/ discovery document is published. The site is a WordPress
+  marketing site that 301-redirects every unknown path to the homepage, so every
+  probe below that returned a 3xx is a catch-all false positive, not a document.
+  Only /.well-known/security.txt and /llms.txt return a true 404. No raw files
+  were saved because no probe returned a real document, and no `WellKnown`,
+  `SecurityTxt`, or `APICatalog` pointer is wired in apis.yml.
+catch_all:
+  behavior: 301 redirect to https://280.earth/
+  content_type: text/html
+  note: >-
+    Reject any 200/3xx HTML body on this host as evidence of a well-known
+    document; re-probe with a strict JSON/text parse check on future rounds.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  found: false
+- path: /.well-known/openid-configuration
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/oauth-authorization-server
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/oauth-protected-resource
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/api-catalog
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/ai-plugin.json
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/agent-card.json
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/agent.json
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+- path: /.well-known/mcp.json
+  status: 301
+  found: false
+  reason: catch-all redirect to homepage (HTML)
+contract_discovery:
+  performed: '2026-08-02'
+  result: no machine-readable contract published
+  hosts_probed:
+  - 280.earth
+  subdomains_resolved: []
+  subdomains_tried:
+  - api.280.earth
+  - docs.280.earth
+  - developer.280.earth
+  - developers.280.earth
+  - app.280.earth
+  - portal.280.earth
+  - status.280.earth
+  - trust.280.earth
+  - security.280.earth
+  - data.280.earth
+  - mcp.280.earth
+  paths:
+  - {path: /llms.txt, status: 404}
+  - {path: /openapi.json, status: 301, found: false}
+  - {path: /openapi.yaml, status: 301, found: false}
+  - {path: /swagger.json, status: 301, found: false}
+  - {path: /v1/openapi.json, status: 301, found: false}
+  - {path: /api-docs, status: 301, found: false}
+  - {path: /docs, status: 301, found: false}
+  - {path: /redoc, status: 301, found: false}
+  - {path: /graphql, status: 301, found: false}
+  - {path: /api, status: 301, found: false}
+  sitemap:
+    url: https://280.earth/page-sitemap.xml
+    status: 200
+    pages:
+    - https://280.earth/
+    - https://280.earth/privacy-policy-2/
+    - https://280.earth/stories/
+    - https://280.earth/careers/
+    - https://280.earth/projects/
+  github_org:
+    url: https://github.com/280earth
+    status: 200
+    public_repos: 0
+  registries:
+    npm: no first-party package found
+    pypi: no first-party package found
+  rss:
+    url: https://280.earth/feed/
+    status: 200
+    items: 0
+    note: empty default WordPress feed; the /stories/ page links to third-party press
+      coverage, not first-party posts
