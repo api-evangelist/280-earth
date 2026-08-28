@@ -13,6 +13,17 @@ description: '280 Earth is a direct air capture (DAC) company that permanently r
   is a hardware and carbon-removal operator; as of this profiling pass it publishes
   no public developer surface, API, or machine-readable contract.'
 url: https://raw.githubusercontent.com/api-evangelist/280-earth/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://280.earth/wp-content/uploads/2023/10/logo.png
 x-type: company
 x-source: harvest:secondary-market
