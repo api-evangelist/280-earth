@@ -64,29 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-280 Earth is a direct air capture (DAC) company that permanently removes carbon dioxide from the atmosphere. Launched in 2018 inside X, the Alphabet moonshot factory, and spun out as an independent company in 2022, it is backed by Sergey Brin and Builders VC and closed a $50M Series B in 2024. Its proprietary sorbent moves through a gravity-fed, dual-chamber system that continuously cycles material between capturing and releasing CO2, running on low-grade industrial waste heat or clean electricity and producing fresh water as a byproduct. Its first pilot plant, in The Dalles, Oregon, captures 500 tons of CO2 per year on a site sized for more than 20,000 tons per year at full build-out, and underpins a $40M offtake agreement with the Frontier carbon removal buyer consortium.
+280 Earth is a direct air capture (DAC) company that permanently removes carbon dioxide from the atmosphere. Originally launched in 2018 inside X, the Alphabet moonshot factory, and spun out as an independent company in 2022, it is backed by Sergey Brin, Builders VC and a $50M Series B. Its proprietary sorbent moves through a gravity-fed dual-chamber system that continuously cycles material between capturing and releasing CO2, running on low-grade industrial waste heat or clean electricity and producing fresh water as a byproduct. Its first pilot plant, in The Dalles, Oregon, captures 500 tons of CO2 per year on a site sized for more than 20,000 tons per year at full build-out, and underpins a $40M offtake agreement with the Frontier carbon removal buyer consortium (Google, Meta, Stripe, Shopify and others). 280 Earth is a hardware and carbon-removal operator; as of this profiling pass it publishes no public developer surface, API, or machine-readable contract.
 
-- Website: https://280.earth/
-- Projects: https://280.earth/projects/
-- Careers: https://280.earth/careers/
-- GitHub: https://github.com/280earth
-- Secondary market: https://forgeglobal.com/280-earth_stock/
+**Areas:** Company · Climate · Carbon Removal · Direct Air Capture · Carbon Capture · Sustainability · Energy · Climate Tech
 
-## API surface
+## 280 Earth on APIs.io
 
-**None published.** Contract discovery on 2026-08-02 probed the website host and eleven candidate
-subdomains (`api.`, `docs.`, `developer.`, `developers.`, `app.`, `portal.`, `status.`, `trust.`,
-`security.`, `data.`, `mcp.` — none resolve), plus `/openapi.json`, `/openapi.yaml`, `/swagger.json`,
-`/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`, `/graphql`, `/llms.txt`, and the full
-`/.well-known/` discovery surface including `agent-card.json` and the legacy `agent.json`. Every probe
-missed — the site 301-redirects unknown paths to the homepage, so the HTML responses are catch-all
-false positives, not documents. No OpenAPI, GraphQL, AsyncAPI, MCP server, agent card, SDK, or
-security.txt exists. Full evidence is in `well-known/280-earth-well-known.yml`.
+Everything profiled for 280 Earth is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/280-earth/](https://apis.io/providers/280-earth/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Artifact | File | Method |
-|---|---|---|
-| Domain security | `security/280-earth-domain-security.yml` | probed |
-| Well-known / contract discovery | `well-known/280-earth-well-known.yml` | probed |
-| llms.txt | `llms/280-earth-llms.txt` | generated |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [280 Earth Domain Security](https://apis.io/security/280-earth/280-earth-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://280.earth/)
+- [Privacy policy](https://280.earth/privacy-policy-2/)
+- [GitHub](https://github.com/280earth)
+
+## API Evangelist rating
+
+**Kin Score 7.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/280-earth/](https://apis.io/providers/280-earth/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 280 Earth: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/280-earth/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
